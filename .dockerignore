@@ -1,0 +1,9 @@
+.next
+.husky
+.github
+node_modules
+docs
+.idea
+.vscode
+.DS_Store
+*.log
