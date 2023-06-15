@@ -41,7 +41,7 @@
   top: 0;
   width: var(--sidebar-width);
   box-sizing: border-box;
-  padding: 20px;
+  padding: 20px 15px;
   background-color: var(--second);
   display: flex;
   flex-direction: column;
@@ -232,6 +232,7 @@
     flex-direction: column;
 
     .sidebar-bar-button {
+      min-height: 50px;
       &:not(:last-child) {
         margin-right: 0;
         margin-bottom: 10px;

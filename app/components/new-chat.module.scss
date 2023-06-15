@@ -60,8 +60,30 @@
     justify-content: center;
     font-size: 12px;
 
+    @mixin scaleOnHover {
+      // increase size on hover
+      transform: scale(1);
+      transition: all ease 0.3s;
+
+      &:hover {
+        transform: translateY(-5px) scale(1.1);
+        z-index: 999;
+      }
+    }
+
     .skip {
+      padding: 10px 14px;
       margin-left: 10px;
+
+      @include scaleOnHover;
+    }
+
+    .skip-text {}
+
+    .more {
+      padding: 10px 14px;
+
+      @include scaleOnHover;
     }
   }
 
@@ -72,21 +94,11 @@
     align-items: center;
     padding-top: 20px;
 
-    $linear: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0),
-      rgba(0, 0, 0, 1),
-      rgba(0, 0, 0, 0)
-    );
-
-    -webkit-mask-image: $linear;
-    mask-image: $linear;
-
     animation: slide-in ease 0.5s;
 
     .mask-row {
       display: flex;
-      // justify-content: center;
+      justify-content: center;
       margin-bottom: 10px;
 
       @for $i from 1 to 10 {
@@ -104,7 +116,7 @@
         background-color: var(--white);
         border-radius: 10px;
         margin-right: 10px;
-        max-width: 8em;
+        max-width: 20em;
         transform: scale(1);
         cursor: pointer;
         transition: all ease 0.3s;

@@ -10,6 +10,7 @@ export function IconButton(props: {
   bordered?: boolean;
   shadow?: boolean;
   className?: string;
+  textClassName?: string;
   title?: string;
   disabled?: boolean;
 }) {
@@ -38,7 +39,13 @@ export function IconButton(props: {
       )}
 
       {props.text && (
-        <div className={styles["icon-button-text"]}>{props.text}</div>
+        <div
+          className={`${styles["icon-button-text"]} ${
+            props.textClassName ?? ""
+          }`}
+        >
+          {props.text}
+        </div>
       )}
     </button>
   );
