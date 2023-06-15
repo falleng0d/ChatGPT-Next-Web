@@ -41,7 +41,7 @@
   top: 0;
   width: var(--sidebar-width);
   box-sizing: border-box;
-  padding: 20px 15px;
+  padding: 20px 10px;
   background-color: var(--second);
   display: flex;
   flex-direction: column;
@@ -194,7 +194,7 @@
 
 .chat-item:hover > .chat-item-delete {
   opacity: 0.5;
-  transform: translateX(-10px);
+  transform: translateX(-3px);
 }
 
 .chat-item:hover > .chat-item-delete:hover {
@@ -232,7 +232,7 @@
     flex-direction: column;
 
     .sidebar-bar-button {
-      min-height: 50px;
+      min-height: 42px;
       &:not(:last-child) {
         margin-right: 0;
         margin-bottom: 10px;
@@ -242,7 +242,7 @@
 
   .chat-item {
     padding: 0;
-    min-height: 50px;
+    min-height: 38px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -251,7 +251,7 @@
 
     &:hover {
       .chat-item-narrow {
-        transform: scale(0.7) translateX(-50%);
+        // transform: scale(0.7) translateX(-50%);
       }
     }
   }
@@ -270,7 +270,7 @@
     .chat-item-avatar {
       display: flex;
       justify-content: center;
-      opacity: 0.2;
+      opacity: 0.1;
       position: absolute;
       transform: scale(4);
     }
@@ -285,12 +285,12 @@
   }
 
   .chat-item-delete {
-    top: 15px;
+    top: -2px;
   }
 
   .chat-item:hover > .chat-item-delete {
     opacity: 0.5;
-    right: 5px;
+    right: 0px;
   }
 
   .sidebar-tail {
