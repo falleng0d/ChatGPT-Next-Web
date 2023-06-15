@@ -2,6 +2,7 @@
 docker build --tag gptweb .
 docker run -d --name gptweb gptweb
 mkdir -p ./build/app
+rm -rf ./build/app/*
 docker cp gptweb:/app ./build
 docker stop gptweb
 docker rm gptweb
