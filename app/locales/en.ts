@@ -228,7 +228,7 @@ const en: RequiredLocaleType = {
     Name: "Plugin",
   },
   Mask: {
-    Name: "Mask",
+    Name: "Template",
     Page: {
       Title: "Prompt Template",
       SubTitle: (count: number) => `${count} prompt templates`,
@@ -265,10 +265,10 @@ const en: RequiredLocaleType = {
   },
   NewChat: {
     Return: "Return",
-    Skip: "Just Start",
-    Title: "Pick a Mask",
-    SubTitle: "Chat with the Soul behind the Mask",
-    More: "Find More",
+    Skip: "Skip",
+    Title: "Pick a Template",
+    SubTitle: "Start a chat using a prompt template",
+    More: "Find Templates",
     NotShow: "Never Show Again",
     ConfirmNoShow: "Confirm to disable？You can enable it in settings later.",
   },
