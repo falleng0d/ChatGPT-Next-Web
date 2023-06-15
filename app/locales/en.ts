@@ -228,9 +228,9 @@ const en: RequiredLocaleType = {
     Name: "Plugin",
   },
   Mask: {
-    Name: "Template",
+    Name: "Templates",
     Page: {
-      Title: "Prompt Template",
+      Title: "Prompt Templates",
       SubTitle: (count: number) => `${count} prompt templates`,
       Search: "Search Templates",
       Create: "Create",

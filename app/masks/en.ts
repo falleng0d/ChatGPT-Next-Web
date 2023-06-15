@@ -2,7 +2,7 @@ import { BuiltinMask } from "./typing";
 
 export const EN_MASKS: BuiltinMask[] = [
   {
-    avatar: "1f47e",
+    avatar: "gpt-bot",
     name: "GitHub Copilot",
     context: [
       {
@@ -25,7 +25,7 @@ export const EN_MASKS: BuiltinMask[] = [
     builtin: true,
   },
   {
-    avatar: "1f47e",
+    avatar: "gpt-bot",
     name: "IT Expert",
     context: [
       {
