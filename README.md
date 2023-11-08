@@ -3,15 +3,27 @@
 
 <h1 align="center">ChatGPT Next Web</h1>
 
-English / [简体中文](./README_CN.md)
+English / [简体中文](./README_CN.md) / [日本語](./README_JA.md)
 
-One-Click to deploy well-designed ChatGPT web UI on Vercel.
+One-Click to get well-designed cross-platform ChatGPT web UI.
 
-一键免费部署你的私人 ChatGPT 网页应用。
+一键免费部署你的跨平台私人 ChatGPT 应用。
 
-[Demo](https://chatgpt.nextweb.fun/) / [Issues](https://github.com/Yidadaa/ChatGPT-Next-Web/issues) / [Buy Me a Coffee](https://www.buymeacoffee.com/yidadaa)
+[![Web][Web-image]][web-url]
+[![Windows][Windows-image]][download-url]
+[![MacOS][MacOS-image]][download-url]
+[![Linux][Linux-image]][download-url]
 
-[演示](https://chatgpt.nextweb.fun/) / [反馈](https://github.com/Yidadaa/ChatGPT-Next-Web/issues) / [QQ 群](https://github.com/Yidadaa/ChatGPT-Next-Web/discussions/1724) / [打赏开发者](https://user-images.githubusercontent.com/16968934/227772541-5bcd52d8-61b7-488c-a203-0330d8006e2b.jpg)
+[Web App](https://chatgpt.nextweb.fun/) / [Desktop App](https://github.com/Yidadaa/ChatGPT-Next-Web/releases) / [Discord](https://discord.gg/YCkeafCafC) / [Twitter](https://twitter.com/mortiest_ricky) / [Buy Me a Coffee](https://www.buymeacoffee.com/yidadaa)
+
+[网页版](https://chatgpt.nextweb.fun/) / [客户端](https://github.com/Yidadaa/ChatGPT-Next-Web/releases) / [反馈](https://github.com/Yidadaa/ChatGPT-Next-Web/issues) / [QQ 群](https://github.com/Yidadaa/ChatGPT-Next-Web/discussions/1724) / [打赏开发者](https://user-images.githubusercontent.com/16968934/227772541-5bcd52d8-61b7-488c-a203-0330d8006e2b.jpg)
+
+[web-url]: https://chatgpt.nextweb.fun
+[download-url]: https://github.com/Yidadaa/ChatGPT-Next-Web/releases
+[Web-image]: https://img.shields.io/badge/Web-PWA-orange?logo=microsoftedge
+[Windows-image]: https://img.shields.io/badge/-Windows-blue?logo=windows
+[MacOS-image]: https://img.shields.io/badge/-MacOS-black?logo=apple
+[Linux-image]: https://img.shields.io/badge/-Linux-333?logo=ubuntu
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FYidadaa%2FChatGPT-Next-Web&env=OPENAI_API_KEY&env=CODE&project-name=chatgpt-next-web&repository-name=ChatGPT-Next-Web)
 
@@ -24,6 +36,8 @@ One-Click to deploy well-designed ChatGPT web UI on Vercel.
 ## Features
 
 - **Deploy for free with one-click** on Vercel in under 1 minute
+- Compact client (~5MB) on Linux/Windows/MacOS, [download it now](https://github.com/Yidadaa/ChatGPT-Next-Web/releases)
+- Fully compatible with self-deployed llms, recommended for use with [RWKV-Runner](https://github.com/josStorer/RWKV-Runner) or [LocalAI](https://github.com/go-skynet/LocalAI)
 - Privacy first, all data stored locally in the browser
 - Markdown support: LaTex, mermaid, code highlight, etc.
 - Responsive design, dark mode and PWA
@@ -31,7 +45,7 @@ One-Click to deploy well-designed ChatGPT web UI on Vercel.
 - New in v2: create, share and debug your chat tools with prompt templates (mask)
 - Awesome prompts powered by [awesome-chatgpt-prompts-zh](https://github.com/PlexPt/awesome-chatgpt-prompts-zh) and [awesome-chatgpt-prompts](https://github.com/f/awesome-chatgpt-prompts)
 - Automatically compresses chat history to support long conversations while also saving your tokens
-- I18n: English, 简体中文, 繁体中文, 日本語, Français, Español, Italiano, Türkçe, Deutsch, Tiếng Việt, Русский, Čeština, 한국어
+- I18n: English, 简体中文, 繁体中文, 日本語, Français, Español, Italiano, Türkçe, Deutsch, Tiếng Việt, Русский, Čeština, 한국어, Indonesia
 
 ## Roadmap
 
@@ -39,23 +53,20 @@ One-Click to deploy well-designed ChatGPT web UI on Vercel.
 - [x] User Prompt: user can edit and save custom prompts to prompt list
 - [x] Prompt Template: create a new chat with pre-defined in-context prompts [#993](https://github.com/Yidadaa/ChatGPT-Next-Web/issues/993)
 - [x] Share as image, share to ShareGPT [#1741](https://github.com/Yidadaa/ChatGPT-Next-Web/pull/1741)
-- [ ] Desktop App with tauri
-- [ ] Self-host Model: support llama, alpaca, ChatGLM, BELLE etc.
+- [x] Desktop App with tauri
+- [x] Self-host Model: Fully compatible with [RWKV-Runner](https://github.com/josStorer/RWKV-Runner), as well as server deployment of [LocalAI](https://github.com/go-skynet/LocalAI): llama/gpt4all/rwkv/vicuna/koala/gpt4all-j/cerebras/falcon/dolly etc.
 - [ ] Plugins: support network search, calculator, any other apis etc. [#165](https://github.com/Yidadaa/ChatGPT-Next-Web/issues/165)
-
-### Not in Plan
-
-- User login, accounts, cloud sync
-- UI text customize
 
 ## What's New
 
 - 🚀 v2.0 is released, now you can create prompt templates, turn your ideas into reality! Read this: [ChatGPT Prompt Engineering Tips: Zero, One and Few Shot Prompting](https://www.allabtai.com/prompt-engineering-tips-zero-one-and-few-shot-prompting/).
 - 🚀 v2.7 let's share conversations as image, or share to ShareGPT!
+- 🚀 v2.8 now we have a client that runs across all platforms!
 
 ## 主要功能
 
 - 在 1 分钟内使用 Vercel **免费一键部署**
+- 提供体积极小（~5MB）的跨平台客户端（Linux/Windows/MacOS）, [下载地址](https://github.com/Yidadaa/ChatGPT-Next-Web/releases)
 - 完整的 Markdown 支持：LaTex 公式、Mermaid 流程图、代码高亮等等
 - 精心设计的 UI，响应式设计，支持深色模式，支持 PWA
 - 极快的首屏加载速度（~100kb），支持流式响应
@@ -72,20 +83,16 @@ One-Click to deploy well-designed ChatGPT web UI on Vercel.
 - [x] 允许用户自行编辑内置 Prompt 列表
 - [x] 预制角色：使用预制角色快速定制新对话 [#993](https://github.com/Yidadaa/ChatGPT-Next-Web/issues/993)
 - [x] 分享为图片，分享到 ShareGPT 链接 [#1741](https://github.com/Yidadaa/ChatGPT-Next-Web/pull/1741)
-- [ ] 使用 tauri 打包桌面应用
-- [ ] 支持自部署的大语言模型
+- [x] 使用 tauri 打包桌面应用
+- [x] 支持自部署的大语言模型：开箱即用 [RWKV-Runner](https://github.com/josStorer/RWKV-Runner) ，服务端部署 [LocalAI 项目](https://github.com/go-skynet/LocalAI) llama / gpt4all / rwkv / vicuna / koala / gpt4all-j / cerebras / falcon / dolly 等等，或者使用 [api-for-open-llm](https://github.com/xusenlinzy/api-for-open-llm)
 - [ ] 插件机制，支持联网搜索、计算器、调用其他平台 api [#165](https://github.com/Yidadaa/ChatGPT-Next-Web/issues/165)
-
-### 不会开发的功能
-
-- 界面文字自定义
-- 用户登录、账号管理、消息云同步
 
 ## 最新动态
 
 - 🚀 v2.0 已经发布，现在你可以使用面具功能快速创建预制对话了！ 了解更多： [ChatGPT 提示词高阶技能：零次、一次和少样本提示](https://github.com/Yidadaa/ChatGPT-Next-Web/issues/138)。
 - 💡 想要更方便地随时随地使用本项目？可以试下这款桌面插件：https://github.com/mushan0x0/AI0x0.com
 - 🚀 v2.7 现在可以将会话分享为图片了，也可以分享到 ShareGPT 的在线链接。
+- 🚀 v2.8 发布了横跨 Linux/Windows/MacOS 的体积极小的客户端。
 
 ## Get Started
 
@@ -128,7 +135,7 @@ After forking the project, due to the limitations imposed by GitHub, you need to
 
 If you want to update instantly, you can check out the [GitHub documentation](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork) to learn how to synchronize a forked project with upstream code.
 
-You can star or watch this project or follow author to get release notifictions in time.
+You can star or watch this project or follow author to get release notifications in time.
 
 ## Access Password
 
@@ -152,7 +159,7 @@ Your openai api key.
 
 ### `CODE` (optional)
 
-Access passsword, separated by comma.
+Access password, separated by comma.
 
 ### `BASE_URL` (optional)
 
@@ -177,6 +184,29 @@ If you do not want users to input their own API key, set this value to 1.
 > Default: Empty
 
 If you do not want users to use GPT-4, set this value to 1.
+
+### `ENABLE_BALANCE_QUERY` (optional)
+
+> Default: Empty
+
+If you do want users to query balance, set this value to 1, or you should set it to 0.
+
+### `DISABLE_FAST_LINK` (optional)
+
+> Default: Empty
+
+If you want to disable parse settings from url, set this to 1.
+
+### `CUSTOM_MODELS` (optional)
+
+> Default: Empty
+> Example: `+llama,+claude-2,-gpt-3.5-turbo` means add `llama, claude-2` to model list, and remove `gpt-3.5-turbo` from list.
+
+To control custom models, use `+` to add a custom model, use `-` to hide a model, separated by comma.
+
+## Requirements
+
+NodeJS >= 18, Docker >= 20
 
 ## Development
 
@@ -213,8 +243,8 @@ yarn dev
 docker pull yidadaa/chatgpt-next-web
 
 docker run -d -p 3000:3000 \
-   -e OPENAI_API_KEY="sk-xxxx" \
-   -e CODE="your-password" \
+   -e OPENAI_API_KEY=sk-xxxx \
+   -e CODE=your-password \
    yidadaa/chatgpt-next-web
 ```
 
@@ -222,10 +252,16 @@ You can start service behind a proxy:
 
 ```shell
 docker run -d -p 3000:3000 \
-   -e OPENAI_API_KEY="sk-xxxx" \
-   -e CODE="your-password" \
-   -e PROXY_URL="http://localhost:7890" \
+   -e OPENAI_API_KEY=sk-xxxx \
+   -e CODE=your-password \
+   -e PROXY_URL=http://localhost:7890 \
    yidadaa/chatgpt-next-web
+```
+
+If your proxy needs password, use:
+
+```shell
+-e PROXY_URL="http://127.0.0.1:7890 user pass"
 ```
 
 ### Shell
@@ -234,11 +270,29 @@ docker run -d -p 3000:3000 \
 bash <(curl -s https://raw.githubusercontent.com/Yidadaa/ChatGPT-Next-Web/main/scripts/setup.sh)
 ```
 
+## Synchronizing Chat Records (UpStash)
+
+| [简体中文](./docs/synchronise-chat-logs-cn.md) | [English](./docs/synchronise-chat-logs-en.md) | [Italiano](./docs/synchronise-chat-logs-es.md) | [日本語](./docs/synchronise-chat-logs-ja.md) | [한국어](./docs/synchronise-chat-logs-ko.md)
+
+## Documentation
+
+> Please go to the [docs][./docs] directory for more documentation instructions.
+
+- [Deploy with cloudflare (Deprecated)](./docs/cloudflare-pages-en.md)
+- [Frequent Ask Questions](./docs/faq-en.md)
+- [How to add a new translation](./docs/translation.md)
+- [How to use Vercel (No English)](./docs/vercel-cn.md)
+- [User Manual (Only Chinese, WIP)](./docs/user-manual-cn.md)
+
 ## Screenshots
 
 ![Settings](./docs/images/settings.png)
 
 ![More](./docs/images/more.png)
+
+## Translation
+
+If you want to add a new translation, read this [document](./docs/translation.md).
 
 ## Donation
 
@@ -271,6 +325,8 @@ bash <(curl -s https://raw.githubusercontent.com/Yidadaa/ChatGPT-Next-Web/main/s
 [@Sha1rholder](https://github.com/Sha1rholder)
 [@AnsonHyq](https://github.com/AnsonHyq)
 [@synwith](https://github.com/synwith)
+[@piksonGit](https://github.com/piksonGit)
+[@ouyangzhiping](https://github.com/ouyangzhiping)
 
 ### Contributor
 
@@ -278,4 +334,4 @@ bash <(curl -s https://raw.githubusercontent.com/Yidadaa/ChatGPT-Next-Web/main/s
 
 ## LICENSE
 
-[Anti 996 License](https://github.com/kattgu7/Anti-996-License/blob/master/LICENSE_CN_EN)
+[MIT](https://opensource.org/license/mit/)
