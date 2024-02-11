@@ -20,7 +20,10 @@ import { BUILTIN_MASK_STORE } from "../masks";
 function MaskItem(props: { mask: Mask; onClick?: () => void }) {
   return (
     <div className={styles["mask"]} onClick={props.onClick}>
-      <MaskAvatar mask={props.mask} />
+      <MaskAvatar
+        avatar={props.mask.avatar}
+        model={props.mask.modelConfig.model}
+      />
       <div className={styles["mask-name"] + " one-line"}>{props.mask.name}</div>
     </div>
   );
