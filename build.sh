@@ -1,9 +1,13 @@
 #!/usr/bin/env bash
-docker build --tag gptweb .
-docker run -d --name gptweb gptweb
-mkdir -p ./build/app
-rm -rf ./build/app/*
-docker cp gptweb:/app ./build
-docker stop gptweb
-docker rm gptweb
-scp -r build/app dark-neon.local:/C:/tools/gptweb
+# set -e # halt script on error
+# set -x # print commands as they are executed
+# set pipefail # when a command in a pipeline fails, that return code will be used as the return code of the whole pipeline
+# set -o posix # more strict failures in subshells
+
+rm -rf build/app/*
+yarn build
+mkdir -p build/app/.next
+cp -r public build/app/public
+cp -r .next build/app/
+mv build/app/.next/standalone/* build/app
+cp .env build/app/.env
